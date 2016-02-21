@@ -1,0 +1,5 @@
+{'consumer_key': "<Consumer Key from apps.twitter.com>", 
+	'consumer_secret': "<Consumer Secret from apps.twitter.com>", 
+	'access_token': "<Access Token from apps.twitter.com>", 
+	'access_token_secret': "<Access Token Secret from apps.twitter.com>",
+	'myID': "<Owner ID from apps.twitter.com>"}
