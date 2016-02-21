@@ -70,13 +70,13 @@ goggles = api.create_list(name=listName, mode='public', description=desc)
 if len(newids) <= 500:
 	for x, pal in list(enumerate(newids)):
 		print "adding " + str(x)
-		api.add_list_member(slug=listName, id=pal, owner_screen_name='robdubbin')
+		api.add_list_member(slug=listName, id=pal, owner_screen_name=myID)
 else:
 
 	random.shuffle(newids)
 	for x, pal in list(enumerate(newids[0:500])):
 		print "adding " + str(x)
-		api.add_list_member(slug=listName, id=pal, owner_screen_name='robdubbin')
+		api.add_list_member(slug=listName, id=pal, owner_screen_name=myID)
 
 # we did it
 print "complete"
