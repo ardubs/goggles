@@ -11,6 +11,7 @@ requirements: python 2.7x, tweepy, json, valid twitter API credentials
 then you'll need to visit https://apps.twitter.com/ to get your API credentials. here's a good guide to doing that: http://iag.me/socialmedia/how-to-create-a-twitter-app-in-8-easy-steps/
 
 note the following information, and fill in the corresponding fields of creds.txt:
+
 ```Consumer Key```
 
 ```Consumer Secret```
