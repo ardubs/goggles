@@ -1,5 +1,5 @@
 # twitter goggles
-see twitter as someone else sees it, by picking someone you follow at random and creating a list populated with everyone they follow. 
+see twitter as someone else sees it, by picking someone you follow at random and creating a list populated with everyone *they* follow. 
 
 ### installation
 requirements: python 2.7x, tweepy, json, valid twitter API credentials
