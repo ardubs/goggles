@@ -1,5 +1,5 @@
-# goggles
-twitter exploration script, written in python
+# twitter goggles
+see twitter as someone else sees it, by picking someone you follow at random and creating a list populated with everyone they follow. 
 
 ### installation
 requirements: python 2.7x, tweepy, json, valid twitter API credentials
@@ -22,12 +22,13 @@ note the following information, and fill in the corresponding fields of creds.tx
 
 ```Owner ID```
 
-from there you should be able to run the script
+paste all that into the appropriate field in creds.txt, and you should be able to run the script.
 
 ### running the script
 ```python goggles.py```
 
-### generating a new list
-to delete a previously created list, just delete it from twitter at https://twitter.com/yourname/lists
+### generating another list
+edit goggles.py line 65 and change the name 'goggles' to a different name
 
-to create an extra list, edit goggles.py line 65 and change the name 'goggles' to a different name
+### deleting a list
+delete lists from inside twitter at https://twitter.com/yourname/lists
