@@ -3,6 +3,7 @@ from tweepy import OAuthHandler
 import random
 import time
 
+
 #
 # this function returns a connection to the twitter API, using credentials loaded from creds.txt
 #
@@ -31,13 +32,13 @@ current = api.friends_ids()
 
 # find someone who also follows us back
 mutual = False
-while mutual == False:
+while not mutual:
 	candidateID = random.choice(current)
 
 	candidate = api.get_user(candidateID)
 	relationship = api.show_friendship(source_id=myID, target_id=candidateID)
 
-	if relationship[0].followed_by == True:
+	if relationship[0].followed_by:
 		mutual = True
 
 # grab their screen name
