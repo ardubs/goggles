@@ -36,10 +36,10 @@ while mutual == False:
 
 	candidate = api.get_user(candidateID)
 	relationship = api.show_friendship(source_id=myID, target_id=candidateID)
-	
+
 	if relationship[0].followed_by == True:
-		mutual = True	
-	
+		mutual = True
+
 # grab their screen name
 handle = candidate.screen_name
 
@@ -61,9 +61,9 @@ for page in tweepy.Cursor(api.friends_ids, screen_name=handle).pages():
 desc = "following " + handle + "'s timeline"
 
 # the name of our list. change this to make a new list!
-listName = "goggles2"
+listName = "goggles"
 
-# create a new list called 'goggles' with the generated description	
+# create a new list called 'goggles' with the generated description
 goggles = api.create_list(name=listName, mode='public', description=desc)
 
 # populate list; twitter lists are limited to 500 members, so grab a random sampling if necessary
@@ -72,7 +72,7 @@ if len(newids) <= 500:
 		print "adding " + str(x)
 		api.add_list_member(slug=listName, id=pal, owner_screen_name='robdubbin')
 else:
-	
+
 	random.shuffle(newids)
 	for x, pal in list(enumerate(newids[0:500])):
 		print "adding " + str(x)
