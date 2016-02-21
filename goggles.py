@@ -2,7 +2,7 @@ import tweepy
 from tweepy import OAuthHandler
 import random
 import time
-
+import webbrowser
 
 #
 # this function returns a connection to the twitter API, using credentials loaded from creds.txt
@@ -81,3 +81,7 @@ else:
 
 # we did it
 print "complete"
+
+url = "https://twitter.com" + goggles.uri
+print url
+webbrowser.open(url, new=2)  # 2 = open in a new tab, if possible
