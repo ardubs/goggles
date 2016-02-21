@@ -1,7 +1,7 @@
 import tweepy
 from tweepy import OAuthHandler
-import urllib, urllib2, cookielib
 import random
+import time
 
 #
 # this function returns a connection to the twitter API, using credentials loaded from creds.txt
