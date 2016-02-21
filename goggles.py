@@ -67,15 +67,16 @@ listName = "goggles"
 # create a new list called 'goggles' with the generated description
 goggles = api.create_list(name=listName, mode='public', description=desc)
 
-# populate list; twitter lists are limited to 500 members, so grab a random sampling if necessary
-if len(newids) <= 500:
+# populate list; twitter lists are limited to 5,000 members,
+# so grab a random sampling if necessary
+if len(newids) <= 5000:
 	for x, pal in list(enumerate(newids)):
 		print "adding " + str(x)
 		api.add_list_member(slug=listName, id=pal, owner_screen_name=myID)
 else:
 
 	random.shuffle(newids)
-	for x, pal in list(enumerate(newids[0:500])):
+	for x, pal in list(enumerate(newids[0:5000])):
 		print "adding " + str(x)
 		api.add_list_member(slug=listName, id=pal, owner_screen_name=myID)
 
