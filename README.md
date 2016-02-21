@@ -8,9 +8,9 @@ requirements: python 2.7x, tweepy, json, valid twitter API credentials
 
 ```pip install json```
 
-then you'll need to visit https://apps.twitter.com/ to get your API credentials. here's a good guide to doing that: http://iag.me/socialmedia/how-to-create-a-twitter-app-in-8-easy-steps/
+then you'll need to visit https://apps.twitter.com/ to create an application (if you don't have one already) and get your API credentials. here's a guide that explains how to do that: http://iag.me/socialmedia/how-to-create-a-twitter-app-in-8-easy-steps/
 
-note the following information, and fill in the corresponding fields of creds.txt:
+note the following information:
 
 ```Consumer Key```
 
@@ -22,7 +22,7 @@ note the following information, and fill in the corresponding fields of creds.tx
 
 ```Owner ID```
 
-paste all that into the appropriate field in creds.txt, and you should be able to run the script.
+paste each of those into its appropriate field in creds.txt, and you should be able to run the script.
 
 ### running the script
 ```python goggles.py```
