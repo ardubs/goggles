@@ -36,8 +36,11 @@ delete lists from inside twitter at https://twitter.com/yourname/lists
 v1.1
 ---
 lists go up to 5,000 now (@hugovk)
+
 list opens in browser when complete (@hugovk)
+
 lists are now private by default
+
 added user handle to creds.txt
 
 
