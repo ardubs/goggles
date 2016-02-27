@@ -1,4 +1,4 @@
-# twitter goggles
+# twitter goggles v1.1
 see twitter as someone else sees it, by picking someone you follow at random and creating a list populated with everyone *they* follow. 
 
 ### installation
@@ -20,13 +20,27 @@ note the following information:
 
 ```Owner ID```
 
-paste each of those into its appropriate field in creds.txt, and you should be able to run the script.
+paste each of those (and your twitter handle) into its appropriate field in creds.txt, and you should be able to run the script.
 
 ### running the script
 ```python goggles.py```
 
 ### generating another list
-edit goggles.py line 65 and change the name 'goggles' to a different name
+edit goggles.py line 70 and change the name 'goggles' to a different name
 
 ### deleting a list
 delete lists from inside twitter at https://twitter.com/yourname/lists
+
+### release notes
+
+v1.1
+---
+lists go up to 5,000 now (@hugovk)
+list opens in browser when complete (@hugovk)
+lists are now private by default
+added user handle to creds.txt
+
+
+v1.0
+---
+initial release
