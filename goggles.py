@@ -25,7 +25,7 @@ file.close()
 api = getAPI(creds)
 
 # grab our user ID
-myID = creds['myID']
+myName = creds['myName']
 
 # grab the list of everyone we follow
 current = api.friends_ids()
@@ -72,13 +72,13 @@ goggles = api.create_list(name=listName, mode='public', description=desc)
 if len(newids) <= 5000:
 	for x, pal in list(enumerate(newids)):
 		print "adding " + str(x)
-		api.add_list_member(slug=listName, id=pal, owner_screen_name=myID)
+		api.add_list_member(slug=listName, id=pal, owner_screen_name=myName)
 else:
 
 	random.shuffle(newids)
 	for x, pal in list(enumerate(newids[0:5000])):
 		print "adding " + str(x)
-		api.add_list_member(slug=listName, id=pal, owner_screen_name=myID)
+		api.add_list_member(slug=listName, id=pal, owner_screen_name=myName)
 
 # we did it
 print "complete"
